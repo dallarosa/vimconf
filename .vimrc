@@ -8,6 +8,7 @@ set fenc=utf8
 set fencs=utf8,euc-jp,iso-2022-jp,cp932,default,latin1 
 set showcmd                     " display incomplete commands
 
+
 "" Whitespace
 
 set nowrap                      " don't wrap lines
@@ -65,3 +66,6 @@ map <C-U> :s/\/\///g <CR> :nohlsearch<Bar>:echo<CR>               " Removes C-li
 let Tlist_Ctags_Cmd = "/usr/local/bin/ctags"
 let Tlist_WinWidth = 50
 map <F4> :TlistToggle<cr>
+
+"" Colors
+colorscheme koehler
