@@ -24,7 +24,7 @@ set list
 
 syntax enable
 filetype plugin indent on 
-set smartindent
+set nosmartindent
 set autoindent
 "set cinkeys=0{,0},:,0#,!,!^F
 
@@ -42,7 +42,6 @@ set number                     "Display line number
 ""Set up the status line
 
 set ls=2                        "Always show status line
-set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L] 
 
 "" Window Resizing
 
@@ -67,5 +66,5 @@ let Tlist_Ctags_Cmd = "/usr/local/bin/ctags"
 let Tlist_WinWidth = 50
 map <F4> :TlistToggle<cr>
 
-"" Colors
+"" Color Scheme
 colorscheme koehler
