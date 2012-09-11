@@ -1,4 +1,5 @@
 set nocompatible
+filetype off
 
 "" Call Pathogen
 call pathogen#infect()
@@ -68,3 +69,9 @@ map <F4> :TlistToggle<cr>
 
 "" Color Scheme
 colorscheme koehler
+
+"" Syntastic
+let g:syntastic_enable_signs=1
+let g:syntastic_auto_jump=1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_javascript_checker = 'jshint'
