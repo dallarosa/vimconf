@@ -75,3 +75,15 @@ let g:syntastic_enable_signs=1
 let g:syntastic_auto_jump=1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_javascript_checker = 'jshint'
+
+"" MatchTagAlways
+let g:mta_filetypes = {
+    \ 'html' : 1,
+    \ 'xhtml' : 1,
+    \ 'xml' : 1,
+    \ 'jinja' : 1,
+    \ 'php' : 1,
+    \}
+
+"" Ctags for crappy PHP
+command PhpTags !ctags -R --php-kinds=cifd .
