@@ -17,8 +17,7 @@ set showcmd                     " display incomplete commands
 
 set nowrap                      " don't wrap lines
 set tabstop=2 shiftwidth=2 softtabstop=2 " a tab is two spaces
-set noexpandtab 
-"set expandtab                   " use spaces, not tabs
+set expandtab                   " use spaces, not tabs
 set backspace=indent,eol,start  " backspace through everything in insert mode
 map <F4> :%s/\s\+$  <CR>
 set listchars=eol:$,tab:__,trail:~,extends:>,precedes:<
