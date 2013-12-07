@@ -1,6 +1,9 @@
 set nocompatible
 filetype off
 
+"" Disable mouse
+set mouse-=a
+
 "" Call Pathogen
 call pathogen#infect()
 
