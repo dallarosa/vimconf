@@ -91,3 +91,7 @@ let g:mta_filetypes = {
 
 "" Ctags for crappy PHP
 command PhpTags !ctags -R --php-kinds=cifd .
+
+"" Golang related plugins
+autocmd FileType go autocmd BufWritePre <buffer> Fmt
+autocmd FileType go compiler go
