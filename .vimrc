@@ -1,5 +1,7 @@
 set nocompatible
 filetype off
+filetype plugin indent off
+set runtimepath+=$GOROOT/misc/vim
 
 "" Call Pathogen
 call pathogen#infect()
@@ -22,8 +24,8 @@ set list
 
 ""Syntax & Identation
 
-syntax enable
 filetype plugin indent on 
+syntax on
 set nosmartindent
 set autoindent
 "set cinkeys=0{,0},:,0#,!,!^F
