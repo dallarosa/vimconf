@@ -34,3 +34,6 @@
 [submodule "bundle/tern"]
 	path = bundle/tern
 	url = https://github.com/marijnh/tern_for_vim.git
+[submodule "bundle/vim-rename"]
+	path = bundle/vim-rename
+	url = https://github.com/danro/rename.vim.git
