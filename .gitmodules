@@ -37,3 +37,6 @@
 [submodule "bundle/vim-rename"]
 	path = bundle/vim-rename
 	url = https://github.com/danro/rename.vim.git
+[submodule "bundle/vim-coffeescript"]
+	path = bundle/vim-coffeescript
+	url = https://github.com/kchmck/vim-coffee-script.git
