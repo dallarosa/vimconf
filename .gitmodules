@@ -28,9 +28,6 @@
 [submodule "bundle/matchtagalways"]
 	path = bundle/matchtagalways
 	url = https://github.com/Valloric/MatchTagAlways.git
-[submodule "bundle/youcompleteme"]
-	path = bundle/youcompleteme
-	url = https://github.com/Valloric/YouCompleteMe.git
 [submodule "bundle/tern"]
 	path = bundle/tern
 	url = https://github.com/marijnh/tern_for_vim.git
@@ -40,3 +37,6 @@
 [submodule "bundle/vim-bundler"]
 	path = bundle/vim-bundler
 	url = https://github.com/tpope/vim-bundler.git
+[submodule "bundle/YouCompleteMe"]
+	path = bundle/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe.git
