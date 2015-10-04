@@ -58,9 +58,6 @@ map <F7> :vertical res 150 <CR>
 nmap t% :tabedit %<CR>
 nmap td :tabclose<CR>
 
-"" PHP Lint
-map <F3> :!php -l % <CR>
-
 "" Commenting/Uncommenting
 
 map <C-D> :s/^/\/\//g <CR> :nohlsearch<Bar>:echo<CR>              " Adds C-like comments
@@ -89,10 +86,15 @@ let g:mta_filetypes = {
     \ 'php' : 1,
     \}
 
-"" Ctags for crappy PHP
-command PhpTags !ctags -R --php-kinds=cifd .
-
 "" Golang related plugins
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
+
+let g:go_fmt_command = "goimports"
+let g:go_fmt_autosave = 1
 autocmd FileType go autocmd BufWritePre <buffer> Fmt
 autocmd FileType go compiler go
 
