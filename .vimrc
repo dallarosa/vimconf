@@ -1,7 +1,7 @@
 set nocompatible
 filetype off
 filetype plugin indent off
-set runtimepath+=$GOROOT/misc/vim
+"set runtimepath+=$GOROOT/misc/vim
 
 "" Disable mouse
 set mouse-=a
@@ -94,9 +94,8 @@ let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
 
 let g:go_fmt_command = "goimports"
-let g:go_fmt_autosave = 1
-autocmd FileType go autocmd BufWritePre <buffer> Fmt
-autocmd FileType go compiler go
+"autocmd FileType go autocmd BufWritePre <buffer> Fmt 
+"autocmd FileType go compiler go
 
 " XXX Go App Engine SDK comes with its own Go environment which we need to use
 " for all Go sources, otherwise 'appengine/*' imports cause compile errors.
@@ -105,16 +104,16 @@ autocmd FileType go compiler go
 " method for such purposes.  Hence we need to resort to the following hack.
 
 " No need for this hack if appengine is not loaded or available.
-if !exists('g:loaded_syntastic_go_appengine_checker') || empty(g:SyntasticRegistry.Instance().getCheckers(&ft, ['appengine']))
-    finish
-endif
+"if !exists('g:loaded_syntastic_go_appengine_checker') || empty(g:SyntasticRegistry.Instance().getCheckers(&ft, ['appengine']))
+"    finish
+"endif
 
-if !exists('g:syntastic_go_checkers') || empty(g:syntastic_go_checkers)
+"if !exists('g:syntastic_go_checkers') || empty(g:syntastic_go_checkers)
     " Let appengine the default checker for Go sources.
-    let g:syntastic_go_checkers = [ 'appengine' ]
-else
+"    let g:syntastic_go_checkers = [ 'appengine' ]
+"else
     " If the user already setups a checkers chain, munge it to replace the
     " go checker with the appengine checker.
-    let g:syntastic_go_checkers = map(
-        \ g:syntastic_go_checkers, 'v:val == "go" ? "appengine" : v:val')
-endif
+"    let g:syntastic_go_checkers = map(
+"        \ g:syntastic_go_checkers, 'v:val == "go" ? "appengine" : v:val')
+"endif
